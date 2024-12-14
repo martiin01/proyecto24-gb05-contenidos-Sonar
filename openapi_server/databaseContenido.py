@@ -30,10 +30,3 @@ class Contenido(Base):
             "url_video": self.url_video,
             "thumbnail": self.thumbnail
         }
-
-# Configuración de la base de datos
-DATABASE_URL = "postgresql+psycopg2://postgres:12345@localhost/ASEE"
-engine = create_engine(DATABASE_URL)
-
-# Crear tablas
-Base.metadata.create_all(engine)
